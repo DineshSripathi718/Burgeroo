@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+:root{
+    --title-font : 'carattere', cursive;
+}
+
+body{
+    padding : 0px;
+    margin : 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap : 50px;
+}
+
+.cover-section{
+    height: 100svh;
+    background: url('../assets/burger-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    color : white;  
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+
+.cover-section .title{
+    font-family: var(--title-font);
+}
+
+.cover-section nav .title{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.cover-section nav{
+    display: flex;
+    justify-content: space-between;
+    padding : 30px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.143);
+}
+
+.cover-section a{
+    color : white;
+    text-decoration: none;
+}
+
+.cover-section nav ul{
+    flex  :1;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cover-section nav li{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.cover-section .cover-section-content{
+    padding : 20px;
+    max-width: 700px;
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap : 20px;
+    transform: translateY(50px);
+}
+
+.cover-section .cover-section-content
+.title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.cover-section .cover-section-content .cta{
+    padding : 10px;
+    background-color: yellow;
+    border-radius: 10px;
+    border-color : transparent;
+    cursor: pointer;
+}
+
+.offers-section{
+    display: flex;
+    gap : 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-section img{
+    width: 100%;
+    height: 100%;
+}
+
+.offers-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 20px;
+    background-color: rgb(255, 255, 0);
+    padding : 10px;
+    border-radius: 5px;
+}
+
+.offers-section .container .img-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.offers-section .details{
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    align-items: start;
+}
+
+.offers-section .details .title{
+    font-family: var(--title-font);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.offers-section .details .offer{
+    background-color: red;
+    color : white;
+    font-weight: 600;
+    padding : 10px;
+    border-radius: 10px;
+}
+
+.offers-section .details .cta{
+    padding : 10px;
+    background-color: black;
+    color : white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.our-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 10px;
+}
+
+.our-menu .title{
+    font-family: var(--title-font);
+    font-size: 50px;
+}
+
+
+.items-container{
+    padding : 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    justify-content: space-around   ;
+    gap : 20px;
+}
+
+.items-container .itemContainer{
+    cursor: pointer;
+    border : 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #f1f2f3 25px, #222831 25px);
+    color : white;
+}
+
+.items-container .image-container{
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 40px ;
+}
+
+.items-container .item-details-container{
+    padding : 10px;
+}
+
+.items-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale .5s linear;
+}
+
+.items-container .itemContainer .item-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.items-container .itemContainer .price{
+    color : rgb(255, 255, 255);
+}
+
+.items-container .itemContainer button{
+    background-color: yellow;
+    padding : 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 9px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.itemContainer:hover .image-container img{
+    scale : 1.1;
+}
+
+.our-menu{
+    margin-bottom: 10px;
+}
+
+.our-menu .viewmore{
+    padding : 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: yellow;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.our-menu button{
+    padding : 10px;
+    background-color: transparent;
+    border : none;
+    font-size: 20px;
+    cursor: pointer;    
+    border-radius: 10px;
+    transition: background-color .5s linear, color .5s linear;
+}
+
+.our-menu .active{
+    background-color: black;
+    color : white;
+}
+
+.our-menu .cta:hover{
+    background-color: black;
+    color : white;
+}
+
+.who-we-are{
+    padding  : 20px;
+    background : #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 30px;
+    flex-wrap: wrap;
+    color : white;
+}
+
+
+.who-we-are .image-container{
+    flex : 1;
+    height: 400px;
+    min-width: 250px;
+}
+
+.who-we-are .details-container{
+    min-width: 250px;
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap : 20px;
+}
+
+.who-we-are .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.who-we-are .details-container .title{
+    font-size: 60px;
+    font-family: var(--title-font);
+}
+
+.who-we-are .details-container .read-more{
+    text-decoration: none;
+    color : black;
+    background-color: yellow;
+    padding : 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.book-a-table{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.book-a-table .form .title{
+    font-family: var(--title-font);
+    font-size: 70px;
+    text-transform: capitalize;
+}
+
+.book-a-table .form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
