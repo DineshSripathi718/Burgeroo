@@ -6,11 +6,15 @@
     <title>About - Burgeroo</title>
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="title">Burgeroo</div>
+            <div class="title-container">
+                <div class="title">Burgeroo</div>
+                <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+            </div>
             <ul>
                 <li><a href="./index.html">
                     home
@@ -26,10 +30,10 @@
                 </a></li>
             </ul>
             <ul>
-                <li><a href="">user</a></li>
-                <li><a href="">cart</a></li>
-                <li>search</li>
-                <li><a href="./menu.html">order online</a></li>
+                <li class="userDetails"><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="order-online"><a href="./menu.html">order online</a></li>
             </ul>
         </nav>
     </header>
@@ -48,6 +52,7 @@
                 </a>
             </div>
         </section>
+        <section class="popUpMessage"></section>
     </main>
     <footer>
         <section class="contact-container">
@@ -88,4 +93,6 @@
         </section>
     </footer>
 </body>
+<script src="./script/userManagement.js"></script>
+<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
 </html>

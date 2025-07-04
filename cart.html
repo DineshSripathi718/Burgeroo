@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Burgeroo</title>
+    <title>cart - Burgeroo</title>
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="./style/cart.css">
     <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
                 </a></li>
             </ul>
             <ul>
-                <li><a href="./login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="userDetails"><a href=""><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></li>
                 <li class="order-online"><a href="./menu.html">order online</a></li>
@@ -39,26 +39,7 @@
         </nav>
     </header>
     <main>
-        <section class="user-login">
-            <div class="form">
-                <div class="title">Login</div>
-                <form action="" class="login-form">
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address">
-                    </div>
-                    <div>
-                        <input type="password" name="password" id="password" placeholder="Enter your password">
-                    </div>
-                    <div>
-                        <button id="login">Login</button>
-                        <button type="reset">Cancel</button>
-                    </div>
-                </form>
-                <div class="register">
-                    <p>Don't have an account? <a href="./register.html">Register here</a></p>
-                </div>
-            </div>
-        </section>
+        <section class="display-cart"></section>
         <section class="popUpMessage"></section>
     </main>
     <footer>
@@ -100,6 +81,7 @@
         </section>
     </footer>
 </body>
-<script src="./script/login.js"></script>
+<script src="./script/cart.js"></script>
+<script src="./script/userManagement.js"></script>
 <script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
 </html>

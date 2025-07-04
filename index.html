@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burgeroo - home</title>
     <!-- css style sheets here -->
+     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
     <header class="display-none">
@@ -26,17 +28,20 @@
                 </a></li>
             </ul>
             <ul>
-                <li><a href="./login.html">user</a></li>
-                <li><a href="">cart</a></li>
-                <li>search</li>
-                <li><a href="./menu.html">order online</a></li>
+                <li class=""><a href="./login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="order-online"><a href="./menu.html">order online</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="cover-section">
             <nav>
-                <div class="title">Burgeroo</div>
+                <div class="title-container">
+                    <div class="title">Burgeroo</div>
+                    <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+                </div>
                 <ul>
                     <li><a href="./index.html">
                         home
@@ -52,10 +57,10 @@
                     </a></li>
                 </ul>
                 <ul>
-                    <li><a href="./login.html">user</a></li>
-                    <li><a href="">cart</a></li>
-                    <li>search</li>
-                    <li><a href="./menu.html">order online</a></li>
+                    <li class="userDetails"><a href="./login.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="order-online"><a href="./menu.html">order online</a></li>
                 </ul>
             </nav>
             <div class="cover-section-content">
@@ -159,6 +164,7 @@
             </div>
             <a href="#">view more</a>
         </section>
+        <section class="popUpMessage"></section>
     </main>
     <footer>
         <section class="contact-container">
@@ -201,4 +207,6 @@
 </body>
 <script src="./script/index.js"></script>
 <script src="./script/Reviews.js"></script>
+<script src="./script/userManagement.js"></script>
+<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
 </html>

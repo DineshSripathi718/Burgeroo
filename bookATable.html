@@ -6,11 +6,15 @@
     <title>Book A Table - Burgeroo</title>
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="title">Burgeroo</div>
+            <div class="title-container">
+                <div class="title">Burgeroo</div>
+                <div class="menu-button"><i class="fa-solid fa-bars"></i></div>
+            </div>
             <ul>
                 <li><a href="./index.html">
                     home
@@ -26,10 +30,10 @@
                 </a></li>
             </ul>
             <ul>
-                <li><a href="./login.html">user</a></li>
-                <li><a href="">cart</a></li>
-                <li>search</li>
-                <li><a href="./menu.html">order online</a></li>
+                <li class="userDetails"><a href="./login.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="order-online"><a href="./menu.html">order online</a></li>
             </ul>
         </nav>
     </header>
@@ -69,6 +73,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.5010768532165!2d78.3875851704181!3d17.49949002770964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91757ccdb69d%3A0x3f1120918f255003!2sBrolly%20Academy%20-%20Software%20Training%20Institute%20in%20Hyderabad!5e1!3m2!1sen!2sin!4v1751098697520!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+        <section class="popUpMessage"></section>
     </main>
     <footer>
         <section class="contact-container">
@@ -110,4 +115,6 @@
     </footer>
 </body>
 <script src="./script/index.js"></script>
+<script src="./script/userManagement.js"></script>
+<script src="https://kit.fontawesome.com/63187b3c56.js" crossorigin="anonymous"></script>
 </html>

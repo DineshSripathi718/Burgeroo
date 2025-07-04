@@ -1,11 +1,23 @@
 const url = "https://dummyjson.com/comments";
 
+const reviewContainer = document.querySelector('.review-container');
+
 async function fetchReviews(){
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data.comments);
-    displayLimitedReviews(data.comments);
+    try{
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data.comments);
+        displayLimitedReviews(data.comments);
+    }catch(error){
+        reviewInternetIssueMessage();
+    }
 }
+
+function reviewInternetIssueMessage(){
+    reviewContainer.innerText = "please connect to a active internet"
+    reviewContainer.classList.add("internetIssue");
+}
+
 
 fetchReviews();
 
@@ -15,7 +27,6 @@ function displayLimitedReviews(data){
 
     const DisplayData = data;
     console.log(DisplayData);
-    const reviewContainer = document.querySelector('.review-container');
     console.log(DisplayData);
     DisplayData.forEach(
         (item) => {
